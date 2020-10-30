@@ -16,28 +16,64 @@
   <p></p>
 
   <script>
+        
     const input = document.querySelector('.numberInput');
     const para = document.querySelector('p');
+    let num= 0 ;
 
-    function squared(num) {
-        return num * num;
-    }
+    console.log("Hi");
+    
+    
 
-    function cubed(num) {
-        return num * num * num;
-    }
-
-    function factorial(num) {
-        if (num < 0) return undefined;
-        if (num == 0) return 1;
-        let x = num - 1;
-        while (x > 1) {
-            num *= x;
-            x--;
-        }
+    input.onchange = function() {
+        const num = input.value;
+        console.log(num);
+        add7(num)
         
-        return num;
+        return(num)
     }
+
+    function add7(num) {
+        num = Number(num);
+        num += 7;
+        console.log(num)
+    }
+    
+    // const input = document.querySelector('.numberInput');
+    // const para = document.querySelector('p');
+
+    // function squared(num) {
+    //     return num * num;
+    // }
+
+    // function cubed(num) {
+    //     return num * num * num;
+    // }
+
+    // function factorial(num) {
+    //     if (num < 0) return undefined;
+    //     if (num == 0) return 1;
+    //     let x = num - 1;
+    //     while (x > 1) {
+    //         num *= x;
+    //         x--;
+    //     }
+
+    //     return num;
+    // }
+
+    // input.onchange = function() {
+    //     const num = input.value;
+    //     if (isNaN(num)) {
+    //         para.textContent = 'You need to enter a number!';
+    //     } else {
+    //         para.textContent = num + ' squared is ' + squared(num) + '. ' +
+    //         num + ' cubed is ' + cubed(num) + '. ' +
+    //         num + ' factorial is ' + factorial(num) + '.';
+    //     }
+//}
   </script>
+
+  
 </body>
 </html>
