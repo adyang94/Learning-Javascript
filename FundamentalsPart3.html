@@ -20,24 +20,43 @@
     const input = document.querySelector('.numberInput');
     const para = document.querySelector('p');
     let num= 0 ;
+    let x = 2;
+    let y = 4;
+    let string = 'stUdEntasldfj.';
 
-    console.log("Hi");
-    
-    
+    LastLetter(string);
 
-    input.onchange = function() {
-        const num = input.value;
-        console.log(num);
-        add7(num)
+    function LastLetter (string) {
+        let letter = string.slice(-1);
+        // let position = strlen(string);
+        // let letter = string.charAt(position);
         
-        return(num)
+        console.log(letter);
+
     }
 
-    function add7(num) {
-        num = Number(num);
-        num += 7;
-        console.log(num)
-    }
+
+    // string = capitalFirst(string);
+    
+    // console.log(string);
+    
+    // function capitalFirst(string) {
+    //     string = string.toLowerCase();
+    //     string = string.charAt(0).toUpperCase() + string.slice(1);
+        
+    //     return(string);
+    // }
+
+    // function multiply (x, y) {
+    //     num = x * y;
+    //     return(num);
+    // }
+
+
+    // function add7(num) {
+    //     num = Number(num);
+    //     num *= 7;
+    // }
     
     // const input = document.querySelector('.numberInput');
     // const para = document.querySelector('p');
